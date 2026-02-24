@@ -1,0 +1,15 @@
+# Ambiente virtuale e IDE
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Cache e file temporanei
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Cartelle specifiche del tuo progetto
+output/
+target/
