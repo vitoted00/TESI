@@ -106,7 +106,7 @@ def _create_single_class_task(agent, class_name: str, analysis: str, uml_diagram
             f"══════════════════════════════════════════\n"
             f"\n"
             f"Crea SOLO il file {class_name}.java con:\n"
-            f"- Package: com.biblioteca\n"
+            f"- Package: com.progetto_generato\n"
             f"- Usa java.time.LocalDate per le date (MAI tipi inventati come Data, Ora, Datetime)\n"
             f"- Javadoc completo sulla classe e su ogni metodo pubblico\n"
             f"- Costruttore con validazione degli input (Objects.requireNonNull, controllo stringa vuota)\n"
@@ -115,7 +115,7 @@ def _create_single_class_task(agent, class_name: str, analysis: str, uml_diagram
             f"- Logica di business realistica, mai stub vuoti\n"
             f"\n"
             f"REGOLE ASSOLUTE — RISPETTA SEMPRE:\n"
-            f"1. Il codice deve iniziare ESATTAMENTE con 'package com.biblioteca;' — nulla prima\n"
+            f"1. Il codice deve iniziare ESATTAMENTE con 'package com.progetto_generato;' — nulla prima\n"
             f"2. La classe si chiama {class_name} — NON usare altri nomi\n"
             f"3. NON usare backtick o blocchi markdown\n"
             f"4. NON scrivere testo prima o dopo il codice Java\n"
@@ -124,7 +124,7 @@ def _create_single_class_task(agent, class_name: str, analysis: str, uml_diagram
         ),
         expected_output=(
             f"Solo il codice Java della classe {class_name}, "
-            f"che inizia con 'package com.biblioteca;', "
+            f"che inizia con 'package com.progetto_generato;', "
             f"contiene 'public class {class_name}' e termina con la graffa di chiusura."
         ),
         agent=agent,
